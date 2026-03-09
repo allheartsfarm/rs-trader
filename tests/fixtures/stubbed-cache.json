@@ -1,0 +1,169 @@
+{
+  "item_id_Iron ore": {
+    "data": 440,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "item_id_Coal": {
+    "data": 180,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "item_id_Mithril ore": {
+    "data": 220,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "item_id_Adamantite ore": {
+    "data": 1200,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "item_id_Rune ore": {
+    "data": 11200,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "current_price_Iron ore": {
+    "data": 440,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "current_price_Coal": {
+    "data": 180,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "current_price_Mithril ore": {
+    "data": 220,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "current_price_Adamantite ore": {
+    "data": 1200,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "current_price_Rune ore": {
+    "data": 11200,
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "Iron ore_7": {
+    "data": [
+      {
+        "price": 440,
+        "volume": 50000,
+        "timestamp": "2024-01-01T00:00:00.000Z"
+      },
+      {
+        "price": 445,
+        "volume": 52000,
+        "timestamp": "2024-01-02T00:00:00.000Z"
+      },
+      {
+        "price": 438,
+        "volume": 48000,
+        "timestamp": "2024-01-03T00:00:00.000Z"
+      }
+    ],
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "Coal_7": {
+    "data": [
+      {
+        "price": 180,
+        "volume": 30000,
+        "timestamp": "2024-01-01T00:00:00.000Z"
+      },
+      {
+        "price": 182,
+        "volume": 31000,
+        "timestamp": "2024-01-02T00:00:00.000Z"
+      },
+      {
+        "price": 179,
+        "volume": 29000,
+        "timestamp": "2024-01-03T00:00:00.000Z"
+      }
+    ],
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "Mithril ore_7": {
+    "data": [
+      {
+        "price": 220,
+        "volume": 15000,
+        "timestamp": "2024-01-01T00:00:00.000Z"
+      },
+      {
+        "price": 225,
+        "volume": 16000,
+        "timestamp": "2024-01-02T00:00:00.000Z"
+      },
+      {
+        "price": 218,
+        "volume": 14000,
+        "timestamp": "2024-01-03T00:00:00.000Z"
+      }
+    ],
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "Adamantite ore_7": {
+    "data": [
+      {
+        "price": 1200,
+        "volume": 8000,
+        "timestamp": "2024-01-01T00:00:00.000Z"
+      },
+      {
+        "price": 1210,
+        "volume": 8200,
+        "timestamp": "2024-01-02T00:00:00.000Z"
+      },
+      {
+        "price": 1195,
+        "volume": 7800,
+        "timestamp": "2024-01-03T00:00:00.000Z"
+      }
+    ],
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "Rune ore_7": {
+    "data": [
+      {
+        "price": 11200,
+        "volume": 6000,
+        "timestamp": "2024-01-01T00:00:00.000Z"
+      },
+      {
+        "price": 11250,
+        "volume": 6200,
+        "timestamp": "2024-01-02T00:00:00.000Z"
+      },
+      {
+        "price": 11180,
+        "volume": 5800,
+        "timestamp": "2024-01-03T00:00:00.000Z"
+      }
+    ],
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "high_volume_items_5000_7": {
+    "data": [
+      "Iron ore",
+      "Coal",
+      "Mithril ore",
+      "Adamantite ore",
+      "Rune ore"
+    ],
+    "checkedItems": [
+      "Iron ore",
+      "Coal",
+      "Mithril ore",
+      "Adamantite ore",
+      "Rune ore"
+    ],
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  },
+  "all_items": {
+    "data": [
+      "Iron ore",
+      "Coal",
+      "Mithril ore",
+      "Adamantite ore",
+      "Rune ore"
+    ],
+    "timestamp": "2024-01-01T00:00:00.000Z"
+  }
+}

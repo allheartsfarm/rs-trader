@@ -1,0 +1,65 @@
+{
+  "trading": {
+    "minProfitPerTrade": 500000,
+    "targetProfitPerTrade": 1000000,
+    "baseCapital": 10000000,
+    "maxPositions": 3,
+    "minConfidence": 0.3,
+    "profitTargetPercent": {
+      "min": 0.05,
+      "max": 0.2
+    },
+    "minProfitPercent": 0.01,
+    "positionSizePercent": 0.33,
+    "maxTradeDurationDays": 2,
+    "profitPerMonthPercentile": 0.2,
+    "minProfitPerMonth": 100000
+  },
+  "strategies": {
+    "momentum": {
+      "lookbackPeriod": 5,
+      "profitCap": 0.12,
+      "weight": 0.9,
+      "maxConfidence": 0.9
+    },
+    "meanReversion": {
+      "lookbackPeriod": 20,
+      "deviationThreshold": 0.1,
+      "profitCap": 0.15,
+      "weight": 1.2,
+      "maxConfidence": 0.85
+    },
+    "volume": {
+      "lookbackPeriod": 10,
+      "profitCap": 0.1,
+      "weight": 1.15,
+      "maxConfidence": 0.9
+    },
+    "rsi": {
+      "period": 14,
+      "overbought": 70,
+      "oversold": 30,
+      "weight": 1,
+      "maxConfidence": 0.9
+    },
+    "movingAverage": {
+      "shortPeriod": 10,
+      "longPeriod": 20,
+      "weight": 0.8,
+      "maxConfidence": 0.75
+    },
+    "supportResistance": {
+      "lookbackPeriod": 30,
+      "proximityThreshold": 0.02,
+      "weight": 1.1,
+      "maxConfidence": 0.85
+    }
+  },
+  "data": {
+    "cacheTimeout": 300000,
+    "historicalDays": 30,
+    "maxHistoricalDays": 365,
+    "includeMembersItems": true,
+    "incrementalCollection": true
+  }
+}

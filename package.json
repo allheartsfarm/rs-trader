@@ -1,0 +1,32 @@
+{
+  "name": "rs-trader",
+  "version": "1.0.0",
+  "description": "RuneScape Grand Exchange trading bot with signal generation and position management",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test",
+    "test:watch": "node --test --watch",
+    "test:coverage": "node --test --experimental-test-coverage",
+    "test:integration": "node --test tests/integration/**/*.test.js"
+  },
+  "keywords": [
+    "runescape",
+    "trading",
+    "bot",
+    "grand-exchange"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "node-cron": "^3.0.3",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0"
+  }
+}
