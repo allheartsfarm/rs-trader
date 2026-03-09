@@ -17,6 +17,64 @@ A Node.js bot for **planning and executing trades** on RuneScape's Grand Exchang
 
 Weights and caps are configurable in `settings.json`. See [ALGORITHMS.md](./ALGORITHMS.md) for the full weighting formula.
 
+#### Example user flow (prompts & output)
+
+After `npm start`, the bot loads items, analyzes the market with the ensemble, then shows recommendations and waits for your input.
+
+**Startup & analysis:**
+```
+🏰 RuneScape Trading Bot 🏰
+
+💰 Target Profit: 1000k gp per trade
+💵 Base Capital: 10000k gp
+
+🤖 Trading Bot Started
+📊 F2P Mode: Max 3 positions
+⏱️  Max Trade Duration: 2 days (quick flips)
+
+📦 Fetching all tradeable items...
+✓ Found 1234 F2P items
+✓ Using 1234 F2P items
+
+📈 Analyzing market for multiple durations...
+  Loading price data... (cached)
+✓ Loaded data for 456 items
+
+📋 Trading Recommendations:
+
+⚡ 1-Day Trades:
+────────────────────────────────────────────────────────────────────────────────
+
+1. Iron ore
+   Action: BUY
+   Confidence: 87.2%
+   Expected Duration: ≤ 1 days | Profit/Month: 1,200k gp
+   Entry Price: 152 gp  →  Target Exit: 168 gp  |  Stop Loss: 148 gp
+   Quantity: 21,710 units  |  Total Cost: 3,352k GP (including GE fees)
+   Net Profit: 312k GP (after 2% GE fees)  |  Profit Margin: 9.31%
+   🎯 Confidence: 87% (3 strategies, consensus boost)
+   🔬 Strategies: MeanReversion (82%), Volume (78%), RSI (71%), Momentum (—), MovingAverage (—), SupportResistance (—)
+   💡 Why: Price below 20d average with elevated volume; RSI oversold.
+```
+
+**Approval prompt (you can approve, deny, manage trades, or open settings):**
+```
+📊 Top 5 Recommendations (Ranked by Confidence):
+────────────────────────────────────────────────────────────────────────────────
+... (detailed cards for each recommendation) ...
+
+Commands:
+  A<number> - Approve trade (e.g., A0, A1)
+  D<number> - Deny trade (e.g., D0, D1)
+  M - Manage current trades
+  S - Settings
+  Q - Quit/Continue
+
+>
+```
+
+**Example input:** `A0` → bot records the approved trade; `Q` → continue/exit. Use `M` to view/edit active trades, `S` to toggle members items.
+
 ## Table of contents
 
 - [Features](#-features)
